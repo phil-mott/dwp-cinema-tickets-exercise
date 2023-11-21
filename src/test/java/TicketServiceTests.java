@@ -207,7 +207,7 @@ public class TicketServiceTests {
         assertEquals(seats, ticketPurchaseRequest.getTotalSeatsRequired());
 
         assertEquals(adult, ticketPurchaseRequest.getTotalTicketsRequested(ADULT));
-        //assertEquals(child, ticketPurchaseRequest.getTotalTicketsRequested(CHILD));
+        assertEquals(child, ticketPurchaseRequest.getTotalTicketsRequested(CHILD));
 
         //Might as well check that we can process the request
         ticketService.purchaseTickets(ticketPurchaseRequest);
